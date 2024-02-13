@@ -1,0 +1,44 @@
+<meta charset="UTF-8">
+
+<script>
+
+function mostra(mensagem) { document.write(mensagem); pulaLinha(); }
+
+function pulaLinha() { document.write(""); document.write("<br>"); }
+
+function calculaImc(peso, altura) 
+
+    { return peso / (altura*altura); 
+
+
+    }
+
+function calculaIdade(a, b) { return a - b; }
+
+alert("Vamos calcular o seu IMC!");
+
+var nome = prompt("Informe o seu nome:"); 
+var pesoInformado = parseFloat(prompt(nome + ", informe seu peso: ")); 
+var alturaInformada = parseFloat(prompt(nome + ", informe a sua altura: "));
+
+var ano = prompt("Informe o ano atual:"); 
+var dataNasc = prompt("Informe o ano em que você nasceu: ");
+
+var idade = calculaIdade(ano, dataNasc); 
+var imc = calculaImc( pesoInformado, alturaInformada);
+
+if (isNaN(imc)) { mostra("Por favor, informe valores numéricos para peso e altura."); } else { mostra(nome + ", sua idade é aproximadamente " + idade + " anos e o seu IMC é " + Math.round(imc));
+
+
+if (imc < 18.5) {
+    mostra("Está abaixo do peso normal.");
+} else if (imc >= 18.5 && imc <= 35) {
+    mostra("Você está com o peso normal.");
+} else {
+    mostra("Você está com obesidade nível 1!");
+}
+
+}
+
+
+</script>
