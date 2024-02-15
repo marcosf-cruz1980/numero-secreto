@@ -11,3 +11,4 @@
 </div>
 
 ## �� Time
+![IMG-20210223-WA0014](https://github.com/marcosf-cruz1980/numero-secreto/assets/146502505/be6e1f0d-2d40-4208-bbf9-f8388a4ee8fe)
